@@ -1,0 +1,37 @@
+<ion-header>
+<ion-toolbar>
+  <ion-title>Inventory Helper</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="cardContent">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Scan an Item To Display It's Remaining Stock and Description</ion-card-title>
+      </ion-card-header>
+
+        <ion-card-content class="cardContent">
+
+          <ion-button (click)="scanBarcode()" expand="block" fill="clear" shape="round">Scan Now</ion-button>
+      
+         </ion-card-content>
+
+    </ion-card>
+    
+    <ion-card class="productCard" *ngIf="matchedBarcode">
+      <ion-card-header>
+        <ion-card-title>{{ matchedBarcode.name }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <img [src]="matchedBarcode.image" alt="Barcode Image">
+        <p class="productText">{{ matchedBarcode.description }}</p>
+        <p class="productText">Stock: {{ matchedBarcode.stock }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+</ion-content>
+
+
+

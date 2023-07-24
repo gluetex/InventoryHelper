@@ -1,0 +1,91 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+ion-content{
+  --background: #e7ecef;
+}
+
+ion-toolbar{
+  --background: #8b8c89;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+ion-card-header{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-title{
+
+  text-align: center;
+  width: 100%;
+  font-size: x-large;
+  font-weight: normal;
+  
+
+}
+
+ion-card-title{
+  text-align: center;
+  width: 100%;
+  color:whitesmoke;
+  font-weight: normal;
+}
+
+ion-card{
+  --background: #6096ba;
+}
+ion-card-content{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ion-button{
+  color:whitesmoke;
+  background-color: #274c77;
+  border-radius: 15%;
+  width:30%;
+}
+
+.productText{
+  font-size: normal;
+  font-weight: bold;
+  color:whitesmoke;
+}
+
+.productCard{
+  --background:#274c77;
+}
